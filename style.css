@@ -2,6 +2,7 @@ body {
   font-family: sans-serif;
   color: #333;
   background-color: #f2f2f2;
+  margin: 0;
 }
 
 header {
@@ -58,4 +59,29 @@ a:hover {
 
 footer {
   text-align: center;
+}
+
+/* Media queries para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  /* Estilos para móviles */
+  body {
+    font-size: 14px; /* Reducir tamaño de la fuente */
+  }
+
+  header {
+    text-align: center; /* Centrar el título */
+  }
+
+  nav {
+    flex-direction: column; /* Mostrar enlaces uno debajo del otro */
+    align-items: center; /* Centrar los enlaces verticalmente */
+  }
+
+  main {
+    padding: 10px; /* Reducir el padding */
+  }
+
+  section {
+    margin-bottom: 10px; /* Reducir el margen inferior de las secciones */
+  }
 }

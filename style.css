@@ -41,20 +41,37 @@ section {
 }
 
 #sobre-mi {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Cambiar a flex-start para alinear a la izquierda */
   width: 50%;
   margin: 0 auto;
 }
 
 .bloque {
+  margin: 10px;
   padding: 20px;
-  text-align: justify;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Añadir sangría al principio */
+  padding-left: 40px;
 }
 
 h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
+}
+
+/* Simular sangría con pseudo-elemento */
+.bloque::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #ccc;
 }
 
 h2 {

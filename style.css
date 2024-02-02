@@ -43,16 +43,12 @@ section {
 #sobre-mi {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
   width: 50%;
   margin: 0 auto;
 }
 
 .bloque {
-  margin: 10px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   text-align: justify;
 }
 
